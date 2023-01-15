@@ -118,6 +118,7 @@ const Productlist = ({ products }) => {
               width="20px"
               alt="serach logo"
             />
+            <div></div>
           </div>
           <div className={styles.flexbox}>
             <div className={styles.sidebar}>
@@ -272,8 +273,8 @@ const Productlist = ({ products }) => {
               {/*  */}
             </div>
             <div className={styles.products}>
-              {cartData &&
-                cartData.map((el) => {
+              {data &&
+                data.map((el) => {
                   return (
                     <div key={el.id} className={styles.card}>
                       <div className={styles.imgbox}>
